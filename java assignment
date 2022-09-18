@@ -1,0 +1,295 @@
+// question 1 level2
+import java.util.Scanner;
+class Leapyear{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please enter the year : ");
+  int y = sc.nextInt();
+
+  if( y%400 == 0 ||(y%4 == 0 && y%100 != 0)){
+	System.out.println("The entered year is the Leap Year");
+}
+  else{
+	System.out.println("The entered year is not the Leap Year");
+}
+
+}
+}
+// question 2 level 2
+import java.util.Scanner;
+class Employee{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please enter your Age : ");
+  int a = sc.nextInt();
+  System.out.println("Please enter your Sex (M/F) : ");
+  char s = sc.next().charAt(0);
+  System.out.println("Please enter your Martial Status (Y/N) : ");
+  char m = sc.next().charAt(0);
+
+  if(s == 'F' || s == 'f'){
+	System.out.println("You can work only in urban areas");
+}
+  else if((s == 'M' || s == 'm') && (a >=20 && a<40)){
+	System.out.println("You can work Anywhere");
+}
+  else if((s == 'M' || s == 'm') && (a >=40 && a<60)){
+	System.out.println("You can work only in urban areas");
+}
+  else{
+	System.out.println("ERROR! , Please enter valid Data");
+}
+
+}
+}
+// question 3 level3
+import java.util.Scanner;
+class Reversenum{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please enter the Number ");
+  int n = sc.nextInt();
+  int s = 0,r = 0;
+  
+
+  while(n>0){
+	r = n%10;
+	s = s*10 + r;
+	n /= 10;
+	
+}
+  System.out.println("the Reversed of the Number is : " + s);
+}
+}
+// question 1 level 1
+import java.util.Scanner;
+class Squarecheck{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  double l = sc.nextDouble();
+  double b = sc.nextDouble();
+
+  if(l == b){
+	System.out.println("It is a Square");
+}
+  else{
+	System.out.println("It is not a Square");
+}
+}
+}
+//question 2 level1
+import java.util.Scanner;
+class Greatest{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+  
+  if(a>b){
+	System.out.println(a + " is greater");
+}
+  else if(b>a){
+	System.out.println(b + " is greater");
+}
+  else{
+	System.out.println("Both are equal");
+}
+
+}
+}
+//q 3
+import java.util.Scanner;
+class Discount{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter the total number of units - ");
+  int q = sc.nextInt();
+  int p = q*100;
+  
+  if(p >= 1000){
+	int c = p - (p*10)/100;
+	
+	System.out.println("Total cost after discount -> " + c);
+}
+  else{
+	System.out.println("Total cost -> " + p);
+}
+  
+
+}
+}
+//q4
+import java.util.Scanner;
+class Company{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter your Salary : ");
+  double s = sc.nextDouble();
+
+  System.out.println("Enter your year(s) of service(s) : ");
+  double y = sc.nextDouble();
+
+  if(y>5){
+	double b = s + (s*5)/100;
+	double f = (s*5)/100; 
+	System.out.println("Congratulations! you received "+ b +" rupee with bonus " + f);
+}
+
+}
+
+}
+//q5
+import java.util.Scanner;
+class Company{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter your Salary : ");
+  double s = sc.nextDouble();
+
+  System.out.println("Enter your year(s) of service(s) : ");
+  double y = sc.nextDouble();
+
+  if(y>5){
+	double b = s + (s*5)/100;
+	double f = (s*5)/100; 
+	System.out.println("Congratulations! you received "+ b +" rupee with bonus " + f);
+}
+
+}
+
+}
+}
+//q6
+import java.util.Scanner;
+class Age{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Ages of person a : ");
+  double a = sc.nextDouble();
+  System.out.println("Please Enter the Ages of person b : ");
+  double b = sc.nextDouble();
+  System.out.println("Please Enter the Ages of person c : ");
+  double c = sc.nextDouble(); 
+
+  if(a>b && a>c){
+	System.out.println("The oldest person is a");
+}
+  else if(b>c && b > a){
+	System.out.println("The oldest person is b");
+}
+  else{
+	System.out.println("The oldest person is c");
+} 
+
+
+//////////////////////////////////////////////////////////////
+
+  if(b>a && c > a){
+	System.out.println("The Youngest person is a");
+}
+  else if(b>c && a > c){
+	System.out.println("The Youngest person is c");
+}
+  else{
+	System.out.println("The Youngest person is b");
+}
+}}
+//q7
+import java.util.Scanner;
+class Absolute{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Number: ");
+  int n = sc.nextInt();
+
+  System.out.println("The absolute of the number is : " + Math.abs(n));
+
+}
+}
+//q8
+import java.util.Scanner;
+class Exam{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Number of classes Held : ");
+  int c = sc.nextInt();
+  System.out.println("Please Enter the Number of classes Attended : ");
+  int a = sc.nextInt();
+
+  int p = (a*100)/c;
+  System.out.println("the Percentage of class Attended by you is : " + p);
+
+  if(p>=75){
+	System.out.println("You are allowed to sit in the Examination");
+}
+  else{
+	System.out.println("You are not allowed to sit in the Examination as your attendence percentage is below 75%");
+}
+
+}
+}
+//q9
+import java.util.Scanner;
+class Medical{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Number of classes Held : ");
+  int c = sc.nextInt();
+  System.out.println("Please Enter the Number of classes Attended : ");
+  int a = sc.nextInt();
+
+  System.out.println("if you have medical cause  enter Y else Enter N");
+  char e = sc.next().charAt(0);
+
+  System.out.println("Have you sumited your Medical Certificate. If yes Enter Y else enter N");
+  char m = sc.next().charAt(0);
+
+  int p = (a*100)/c;
+  System.out.println("the Percentage of class Attended by you is : " + p);
+
+  if(p>=75){
+	System.out.println("You are allowed to sit in the Examination");
+}
+  else if((e == 'Y' || e == 'y') && (m == 'Y' || m == 'y')){
+	System.out.println("You are allowed to sit in the Examination");
+}
+
+  else{
+	System.out.println("You are not allowed to sit in the Examination as your attendence percentage is below 75%");
+}
+
+}
+}
+//q11
+import java.util.Scanner;
+class Medical{
+ public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Please Enter the Number of classes Held : ");
+  int c = sc.nextInt();
+  System.out.println("Please Enter the Number of classes Attended : ");
+  int a = sc.nextInt();
+
+  System.out.println("if you have medical cause  enter Y else Enter N");
+  char e = sc.next().charAt(0);
+
+  System.out.println("Have you sumited your Medical Certificate. If yes Enter Y else enter N");
+  char m = sc.next().charAt(0);
+
+  int p = (a*100)/c;
+  System.out.println("the Percentage of class Attended by you is : " + p);
+
+  if(p>=75){
+	System.out.println("You are allowed to sit in the Examination");
+}
+  else if((e == 'Y' || e == 'y') && (m == 'Y' || m == 'y')){
+	System.out.println("You are allowed to sit in the Examination");
+}
+
+  else{
+	System.out.println("You are not allowed to sit in the Examination as your attendence percentage is below 75%");
+}
+
+}
+}
+
